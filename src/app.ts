@@ -2,7 +2,7 @@ import { createApp, definePlugin, tryCtx } from '@basaltkit/core'
 import { configPlugin } from '@basaltkit/config'
 import { EVENTS, eventsPlugin } from '@basaltkit/events'
 import { fastifyPlugin } from '@basaltkit/fastify'
-import { LOGGER, loggerPlugin } from '@basaltkit/logger'
+import { LOGGER, loggerPlugin, type LogLevel } from '@basaltkit/logger'
 import {
   headerResolver,
   MemoryTenantSource,
@@ -42,7 +42,7 @@ const playgroundPlugin = definePlugin({
 })
 
 export interface BuildAppOptions {
-  logLevel?: string
+  logLevel?: LogLevel
   pretty?: boolean
 }
 

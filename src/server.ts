@@ -1,12 +1,13 @@
 import { defineEnv } from '@basaltkit/env'
 import { FASTIFY } from '@basaltkit/fastify'
+import { LOG_LEVELS } from '@basaltkit/logger'
 import { z } from 'zod'
 import { buildApp } from './app.js'
 
 const env = defineEnv({
   PORT: z.coerce.number().default(3000),
   HOST: z.string().default('0.0.0.0'),
-  LOG_LEVEL: z.string().default('info'),
+  LOG_LEVEL: z.enum(LOG_LEVELS).default('info'),
   NODE_ENV: z.enum(['development', 'production', 'test']).default('development'),
 })
 

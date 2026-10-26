@@ -5,7 +5,7 @@ multi-tenant, typed JSON API on Fastify, with events + an audit listener. It use
 the **published `@basaltkit/*` packages** (no monorepo needed), so it boots in a
 browser WebContainer.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/Zebedeu/basalt-playground)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/basaltkit/basalt-playground)
 
 ## Run it
 
